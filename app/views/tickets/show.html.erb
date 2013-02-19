@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<% @ticket.picks.each do |pick|%>
+  <b>Weight:</b>
+  <%= pick.weight %>
+  <br/>
+<% end %>
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
